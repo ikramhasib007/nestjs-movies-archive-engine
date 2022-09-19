@@ -1,6 +1,7 @@
 export enum MovieGenre {
   ACTION = 'action',
   DRAMA = 'drama',
+  CRIME = 'crime',
   HORROR = 'horror',
   THRILLER = 'thriller',
   COMEDY = 'comedy',

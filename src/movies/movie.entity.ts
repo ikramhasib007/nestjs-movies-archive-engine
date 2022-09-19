@@ -10,7 +10,7 @@ import { MovieGenre } from './movie-genre.enum';
 
 @Entity()
 export class Movie {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @Column()
@@ -22,8 +22,8 @@ export class Movie {
   @Column()
   description: string;
 
-  @Column('float')
-  rating: number;
+  @Column()
+  rating: string;
 
   @AfterInsert()
   logInsert() {

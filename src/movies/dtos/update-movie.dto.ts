@@ -1,4 +1,4 @@
-import { IsEnum, IsNotEmpty, IsNumber, IsOptional } from 'class-validator';
+import { IsEnum, IsNotEmpty, IsOptional } from 'class-validator';
 import { MovieGenre } from '../movie-genre.enum';
 
 export class UpdateMovieDto {
@@ -15,7 +15,7 @@ export class UpdateMovieDto {
   @IsOptional()
   description: string;
 
-  @IsNumber()
+  @IsNotEmpty()
   @IsOptional()
-  rating: number;
+  rating: string;
 }
